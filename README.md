@@ -24,7 +24,7 @@ cd MViQA-DOTS
 pip install -r requirements.txt
 ```
 
-**[Offline Mode]** Install VideoLLaMA2 as a Python package (better for direct use):
+**[Offline Mode]** Install MViQA-DOTS as a Python package (better for direct use):
 ```bash
 git clone https://github.com/ZhixuanWuA/MViQA-DOTS
 cd MViQA-DOTS
