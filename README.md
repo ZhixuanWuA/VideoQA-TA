@@ -56,7 +56,7 @@ bash MViQA-DOTS/${dataset_name}/train.sh
 bash MViQA-DOTS/${dataset_name}/test.sh ${checkpoint_path}
 ```
 
-**[Comparison with state-of-the-art methods on the VideoQA task.]** 
+**[Comparison with state-of-the-art methods]** 
 1) [mPLUG-2](https://github.com/X-PLUG/mPLUG-2)
 ```bibtex
 @inproceedings{xu2023mplug,
@@ -177,3 +177,14 @@ bash MViQA-DOTS/${dataset_name}/test.sh ${checkpoint_path}
   year = {2024}
 }
 ```
+
+**[Ablation study]** 
+1) [Vicuna-7B](https://huggingface.co/lmsys/vicuna-7b-v1.5)
+2) [Vicuna-13B](https://huggingface.co/lmsys/vicuna-13b-v1.5)
+3) [Llama 2-7B](https://huggingface.co/meta-llama/Llama-2-7b)
+4) [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+
+
+
+## 📑 Citation
+TODO
