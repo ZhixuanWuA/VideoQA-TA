@@ -45,14 +45,14 @@ def write_jsonl_file(data, file_path):
 # 主程序
 if __name__ == "__main__":
     # 读取JSON文件
-    data1 = read_json_file('/home/wuzhixuan/code/MA-LMM/lavis/output/msrvtt_qa/blip2_vicuna_instruct_vicuna7b/train/b4_e5_lr0.0001_wd0.05_q32_f20_fb10_freezevit/result/20240812_1649/beam5/test_epoch4.json')
-    data2 = read_json_file('/home/wuzhixuan/code/MA-LMM/data/msrvtt/annotation/qa_test.json')
+    data1 = read_json_file('/result/20240812_1649/beam5/test_epoch4.json')
+    data2 = read_json_file('/msrvtt/annotation/qa_test.json')
 
     # 将data2转换为字典，以便于根据question_id快速访问
     data2_dict = {str(k): v for k, v in data2.items()}
     result = merge_jsonl(data1, data2_dict)
     timestamp = get_timestamp()
-    output_file_path = f'/home/wuzhixuan/code/MA-LMM/lavis/output/msrvtt_qa/blip2_vicuna_instruct_vicuna7b/train/b4_e5_lr0.0001_wd0.05_q32_f20_fb10_freezevit/result/20240812_1649/output_{timestamp}.jsonl'
+    output_file_path = f'/output_{timestamp}.jsonl'
 
     # 合并数据
     write_jsonl_file(result, output_file_path)
