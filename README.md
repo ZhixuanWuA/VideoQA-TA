@@ -48,12 +48,12 @@ We use the pre-trained Q-Former weights from [InstructBLIP](https://storage.goog
 
 **[Training]** 
 ```bash
-bash MViQA-DOTS/${dataset_name}/train.sh
+bash MViQA-DOTS/scripts/${dataset_name}/train.sh
 ```
 
 **[Testing]** 
 ```bash
-bash MViQA-DOTS/${dataset_name}/test.sh ${checkpoint_path}
+bash MViQA-DOTS/scripts/${dataset_name}/test.sh ${checkpoint_path}
 ```
 
 **[Comparison with state-of-the-art methods]** 
