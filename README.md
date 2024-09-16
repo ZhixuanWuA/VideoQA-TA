@@ -1,7 +1,7 @@
-# DOTS
+# ETA
 Multi-modal video question-answering
 <p align="left">
-    <img src="https://github.com/ZhixuanWuA/DOTS/blob/main/ICONS.png" width="150" style="margin-bottom: 0.2;"/>
+    <img src="https://github.com/ZhixuanWuA/ETA/blob/main/ICONS.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
 
 
@@ -18,15 +18,15 @@ Basic Dependencies:
 
 **[Online Mode]** Install required packages (better for development):
 ```bash
-git clone https://github.com/ZhixuanWuA/DOTS
-cd DOTS
+git clone https://github.com/ZhixuanWuA/ETA
+cd ETA
 pip install -r requirements.txt
 ```
 
-**[Offline Mode]** Install DOTS as a Python package (better for direct use):
+**[Offline Mode]** Install ETA as a Python package (better for direct use):
 ```bash
-git clone https://github.com/ZhixuanWuA/DOTS
-cd DOTS
+git clone https://github.com/ZhixuanWuA/ETA
+cd ETA
 pip install --upgrade pip  
 pip install -e .
 ```
@@ -52,12 +52,12 @@ We use the pre-trained Q-Former weights from [InstructBLIP](https://storage.goog
 
 **[Training]** 
 ```bash
-bash DOTS/scripts/${dataset_name}/train.sh
+bash ETA/scripts/${dataset_name}/train.sh
 ```
 
 **[Testing]** 
 ```bash
-bash DOTS/scripts/${dataset_name}/test.sh ${checkpoint_path}
+bash ETA/scripts/${dataset_name}/test.sh ${checkpoint_path}
 ```
 
 **[Comparison with state-of-the-art methods]** 
